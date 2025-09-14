@@ -1,5 +1,12 @@
 body {
   text-align: center;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .hidden {
@@ -7,12 +14,19 @@ body {
 }
 
 .modal {
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: greenyellow;
   z-index: 10;
+  padding: 10px;
+  border-radius: 20px;
 }
 .overlay {
   position: fixed;
@@ -23,8 +37,32 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
 }
+.show-modal {
+  font-weight: bold;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 15px;
+  background: radial-gradient(
+    circle,
+    rgba(14, 49, 227, 1) 59%,
+    rgb(222, 49, 83) 88%
+  );
+}
+.show-modal:hover {
+  cursor: pointer;
+  background: radial-gradient(
+    circle,
+    rgba(222, 49, 83, 1) 59%,
+    rgba(14, 49, 227, 1) 88%
+  );
+}
+
 .close-modal {
+  cursor: pointer;
   position: absolute;
   left: 90%;
   top: 5%;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
 }
